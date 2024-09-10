@@ -44,7 +44,7 @@ const Page: React.FC = () => {
 
   // Step 3 --> Read from a contract -- Start
   const contractAddress =
-    "0x05b50ea24d0f464904b995bcfaec029742cd8f1871e78781edbcbec4ecb5301f";
+    "0x066ebe59c8475cc9d01304a0d389e2cea4e5668da71da1fdcf2deb0a45598f0e";
 
   const {
     data: readData,
