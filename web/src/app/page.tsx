@@ -42,8 +42,6 @@ const Page: React.FC = () => {
     watch: true,
   });
 
-  // Step 2 --> Read your balance -- End
-
   // Step 3 --> Read from a contract -- Start
   const contractAddress =
     "0x05b50ea24d0f464904b995bcfaec029742cd8f1871e78781edbcbec4ecb5301f";
@@ -61,8 +59,6 @@ const Page: React.FC = () => {
     address: contractAddress,
     watch: true,
   });
-  // Step 3 --> Read from a contract -- End
-
   // --> Read total supply -- start
   const {
     data: readTotalSupplyData,
@@ -242,13 +238,7 @@ const Page: React.FC = () => {
             : "Workshop has ended"}
         </div>
       )}
-      {/* <div
-        className={`p-4 w-full max-w-md m-4 border-black border bg-white`}
-      >
-        <h3 className="text-2xl font-bold mb-2">Read the Blockchain</h3>
-        <p>Current Block Number: xyz</p>
-        Are we live?
-      </div> */}
+
       {/* Step 1 --> Read the latest block -- End */}
 
       {/* Step 2 --> Read your balance -- Start */}
@@ -313,7 +303,6 @@ const Page: React.FC = () => {
         </div>
       )}
       {/* --> Read total supply -- end */}
-      {/* Step 4 --> Write to a contract -- Start */}
 
       {/* Mint ERC20 Form */}
       <form
@@ -401,7 +390,6 @@ const Page: React.FC = () => {
             View Transation
           </a>
         )}
-
         <div className="flex justify-center pt-4">
           <button
             type="submit"
@@ -416,35 +404,6 @@ const Page: React.FC = () => {
       </form>
       {/* --> Transfer to a contract -- end */}
 
-      {/* <form onSubmit={handleSubmit} className="bg-white p-4 w-full max-w-md m-4 border-black border">
-        <h3 className="text-2xl font-bold mb-2">Write to a Contract</h3>
-        <label
-          htmlFor="amount"
-          className="block text-sm font-medium leading-6 text-gray-900"
-        >
-          Amount:
-        </label>
-        <input
-          type="number"
-          id="amount"
-          value={amount}
-          onChange={(event) => setAmount(event.target.valueAsNumber)}
-          className="block w-full px-3 py-2 text-sm leading-6 border-black focus:outline-none focus:border-yellow-300 black-border-p"
-        />
-        <a
-          href={"https://x.com/0xNestor"}
-          target="_blank"
-          className="text-blue-500 hover:text-blue-700 underline"
-          rel="noreferrer">Check TX on an explorer</a>
-        <div className="flex justify-center pt-4">
-          <button
-            type="submit"
-            className={`border border-black text-black font-regular py-2 px-4 bg-yellow-300 hover:bg-yellow-500`}
-          >
-            Send
-          </button>
-        </div>
-      </form> */}
       {/* Step 4 --> Write to a contract -- End */}
     </div>
   );
